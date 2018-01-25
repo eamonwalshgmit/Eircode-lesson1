@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<title>String Functions</title>
+<script>
+
+/* This is my first Javascript
+project example.
+Very simple!
+
+*/
+
+var EirCode;
+function EnterEirCode()
+  {
+      EirCode = prompt( "Please Enter Your Eir Code", "e.g. H87 X4RD");
+  }
+
+  //Check length of eircode
+ 
+  function CheckEirCode(EirCode)
+  {
+	if (EirCode.length >= 8) 
+	return true;
+	else
+	return false;
+  }
+
+</script>
+</head>
+
+<body>
+<script>
+
+//This line calls the EnterEirCode() function
+ EnterEirCode()
+
+  while (!CheckEirCode(EirCode))
+  {
+      alert("Eir Code Has Too Few Characters.");
+      EnterEirCode();
+  }
+
+  alert("Thanks For Entering Your Eir Code.");
+  document.write("Goodbye");
+
+</script>
+</body>
+</html>
